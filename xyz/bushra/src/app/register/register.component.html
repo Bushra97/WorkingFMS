@@ -1,0 +1,110 @@
+<!-- body -->
+<section class="hero is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Register Yourself !</h1>
+        </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+        <form>
+            <div class="field">
+                <label class="label">Name</label>
+                <input type="text" name="name" class="input" autocomplete="off" required> 
+            </div>
+
+            <div class="field">
+                <label class="label">Date of Birth</label>
+                <input type="date" name="dob" class="input" required>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <input type="email" name="email" class="input" required>
+            </div>
+
+            <div class="field">
+                <label class="label">Phone No.</label>
+                <input type="tel" name="phone" class="input" required>
+            </div>
+
+            <div class="field">
+                <label class="label">Username</label>
+                <input type="text" name="username" class="input" required>
+            </div>
+
+            <div class="field">
+                <label class="label">Password</label>
+                <input type="password" name="password" class="input" required>
+            </div>
+
+            <div class="field">
+                <label class="label">Confirm Password</label>
+                <input type="password" name="cpassword" class="input" required>
+            </div>
+
+            <div class="field">
+                <label class="label">Address</label>
+                <textarea name="address" class="textarea is-small" required></textarea>
+            </div>
+
+            <div class="control">
+                <label class="label">Card Type</label>
+                <label class="radio">
+                  <input type="radio" name="card_type">
+                  Gold
+                </label>
+                <label class="radio">
+                  <input type="radio" name="card_type" checked>
+                  Titanium
+                </label>
+            </div>
+            <br>
+            <div class="control">
+                <label class="label">Select Bank</label>
+                <div class="select is-success">
+                    <select>
+                      <option>Select Bank</option>
+                      <option>State Bank of India</option>
+                      <option>CBI</option>
+                      <option>HDFC Bank</option>
+                      <option>ICICI Bank</option>
+                      <option>AXIS Bank</option>
+                      <option>HSBC</option>
+                      <option>Punjab National Bank</option>
+                      <option>Andhra Bank</option>
+                      <option>Indian Bank</option>
+                      <option>Yes Bank</option>
+                    </select>
+                  </div>
+            </div>
+            <br>
+            <div class="field">
+                <label class="label">Savings Account Number</label>
+                <input type="text" name="accountNo" class="input" required>
+            </div>
+
+            <div class="field">
+                <label class="label">IFSC Code</label>
+                <input type="text" name="ifsc" class="input" required>
+            </div>
+
+            <div class="field is-grouped is-grouped-right">
+                <p class="control">
+                  <button class="button is-primary">
+                    Register
+                </button>
+                </p>
+                <p class="control">
+                  <button class="button is-danger" type="reset">
+                    Reset
+                  </button>
+                </p>
+              </div>
+        </form>
+        <br><br><br>
+        <p>Already a member?</p> <a routerLink="/login">Login Here</a>
+    </div>
+  </section>
